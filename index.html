@@ -4,131 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ibrahim Adam | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">Ibrahim Adam</a>
+      <a href="#" class="logo">IA</a>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="menu-btn" id="menu-btn">☰</button>
+      <button class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="tagline">Computer Science Student • Software Engineering • Backend Systems</p>
-        <h1>Hi, I’m <span>Ibrahim Adam</span>.</h1>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="intro">Hello, I am</p>
+        <h1>IBRAHIM ADAM</h1>
+        <h2>Computer Science Student at the California Institute of Technology</h2>
+
         <p class="hero-description">
-          I build scalable software systems, full-stack applications, and data-driven tools
-          that solve real-world problems.
+          I am passionate about financial technology and applied artificial intelligence,
+          focusing on how intelligent systems can transform global banking and business ecosystems.
+          My interests center on building data-driven, scalable solutions that enhance financial
+          access and drive economic development.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn">View Projects</a>
-          <a href="assets/resume.pdf" class="btn secondary-btn" target="_blank">View Resume</a>
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn secondary-btn">View Resume</a>
         </div>
 
-        <div class="social-links">
-          <a href="https://github.com/iadamib7" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank">LinkedIn</a>
-          <a href="mailto:iadam@caltech.edu">Email</a>
+        <div class="social-icons">
+          <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:iadam@caltech.edu" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <h2>Portfolio Snapshot</h2>
-        <div class="stat">
-          <strong>Caltech</strong>
-          <span>B.S. Computer Science</span>
-        </div>
-        <div class="stat">
-          <strong>3.9/4.0</strong>
-          <span>Current GPA</span>
-        </div>
-        <div class="stat">
-          <strong>40%+</strong>
-          <span>Feature delivery improvement</span>
-        </div>
-        <div class="stat">
-          <strong>20+</strong>
-          <span>Schools and partners supported</span>
-        </div>
+      <div class="hero-image-wrapper">
+        <img src="assets/profile.jpg" alt="Portrait of Ibrahim Adam" class="hero-image" />
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="section-heading">
-        <p>About Me</p>
-        <h2>Who I Am</h2>
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="underline"></div>
       </div>
 
-      <div class="about-box">
+      <div class="about-card">
         <p>
-          I am a Computer Science student at the California Institute of Technology with
-          interests in software engineering, backend systems, distributed systems, AI applications,
-          and data analysis. I enjoy building practical software tools, designing reliable APIs,
-          and working on projects that combine strong engineering with real-world impact.
+          I am a sophomore pursuing a B.S. in Computer Science at the California Institute of
+          Technology. I am particularly drawn to the intersection of machine learning,
+          distributed systems, and digital finance infrastructure. I aspire to design intelligent,
+          inclusive systems that empower sustainable growth on a global scale.
         </p>
-      </div>
-    </section>
 
-    <section id="education" class="section">
-      <div class="section-heading">
-        <p>Education</p>
-        <h2>Academic Background</h2>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
+        <div class="about-grid">
           <div>
-            <h3>California Institute of Technology</h3>
-            <p>Sophomore, B.S. in Computer Science</p>
+            <h3>College</h3>
+            <p>California Institute of Technology</p>
           </div>
-          <span>Sep. 2025 – Jun. 2029</span>
+          <div>
+            <h3>Major</h3>
+            <p>B.S. Computer Science</p>
+          </div>
+          <div>
+            <h3>Focus Areas</h3>
+            <p>FinTech, AI, Distributed Systems</p>
+          </div>
+          <div>
+            <h3>GPA</h3>
+            <p>3.9/4.0</p>
+          </div>
         </div>
-
-        <p><strong>GPA:</strong> 3.9/4.0</p>
-        <p>
-          <strong>Relevant Coursework:</strong> Introduction to Computer Programming,
-          Data Structures and Algorithms, Calculus of One and Several Variables, Linear Algebra
-        </p>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="section-heading">
-        <p>Technical Skills</p>
-        <h2>Tools I Use</h2>
+    <section id="skills" class="section light-section">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+        <div class="underline"></div>
       </div>
 
       <div class="skills-grid">
         <div class="skill-card">
+          <i class="fa-solid fa-code"></i>
           <h3>Languages</h3>
           <p>Java, C, Go, Python, TypeScript, JavaScript, SQL, HTML/CSS</p>
         </div>
 
         <div class="skill-card">
+          <i class="fa-solid fa-layer-group"></i>
           <h3>Tools & Frameworks</h3>
           <p>Spring Boot, React, Gin, Vite, Git, GitHub Actions, Docker Compose, PostgreSQL, Linux, Nginx</p>
         </div>
 
         <div class="skill-card">
+          <i class="fa-solid fa-network-wired"></i>
           <h3>Concepts</h3>
           <p>REST APIs, Distributed Systems, Systems Programming, Concurrency, Authentication, Testing, CI/CD</p>
         </div>
@@ -136,17 +134,17 @@
     </section>
 
     <section id="experience" class="section">
-      <div class="section-heading">
-        <p>Experience</p>
-        <h2>Software Engineering Work</h2>
+      <div class="section-title">
+        <h2>Experience</h2>
+        <div class="underline"></div>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-card">
-          <div class="card-header">
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="card-top">
             <div>
-              <h3>Software Engineer | TorMaMe</h3>
-              <p>Remote</p>
+              <h3>Software Engineer</h3>
+              <p>TorMaMe · Remote</p>
             </div>
             <span>Jan. 2025 – Present</span>
           </div>
@@ -156,13 +154,13 @@
             <li>Built REST APIs, authentication flows, frontend interfaces, and backend integrations, reducing deployment failures and critical bugs by 30%.</li>
             <li>Automated deployment workflows using Docker Compose, PostgreSQL, and Nginx, cutting deployment time from 30 minutes to 10 minutes.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="timeline-card">
-          <div class="card-header">
+        <article class="experience-card">
+          <div class="card-top">
             <div>
-              <h3>Software Engineering Intern | Veritas Foundation Inc.</h3>
-              <p>Ashanti Region, Ghana / Remote</p>
+              <h3>Software Engineering Intern</h3>
+              <p>Veritas Foundation Inc. · Ghana / Remote</p>
             </div>
             <span>Apr. 2025 – Present</span>
           </div>
@@ -172,69 +170,63 @@
             <li>Implemented engagement tracking, partnership coordination workflows, and user data management features, increasing coordination efficiency by 45%.</li>
             <li>Translated outreach-team needs into scalable technical features supporting 20+ schools, sponsors, and community partners.</li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p>Projects</p>
-        <h2>Selected Work</h2>
+    <section id="projects" class="section light-section">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <div class="underline"></div>
       </div>
 
       <div class="projects-grid">
         <article class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+          </div>
           <h3>Cross-Border Payments Simulator</h3>
-          <p class="tech">Go • Gin • React • TypeScript • PostgreSQL • Docker Compose</p>
+          <p class="tech">Go · Gin · React · TypeScript · PostgreSQL · Docker Compose</p>
           <p>
             Distributed payments simulator modeling transfer initiation, FX quoting,
             route selection, ledger updates, and settlement tracking.
           </p>
-          <ul>
-            <li>Built backend REST APIs in Go/Gin to simulate financial messaging and transaction state transitions.</li>
-            <li>Containerized services and built React dashboards to visualize transaction states.</li>
-            <li>Reduced payment-flow debugging time by 50%.</li>
-          </ul>
         </article>
 
         <article class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
           <h3>OrderFlow</h3>
-          <p class="tech">Java • Spring Boot • PostgreSQL • JUnit • GitHub Actions</p>
+          <p class="tech">Java · Spring Boot · PostgreSQL · JUnit · GitHub Actions</p>
           <p>
-            Java/Spring Boot trading engine supporting limit orders, price-time-priority
-            matching, trade execution, cancellation, and REST APIs.
+            Trading engine supporting limit order submission, price-time-priority matching,
+            trade execution, cancellation, REST APIs, testing, and CI workflows.
           </p>
-          <ul>
-            <li>Implemented an in-memory matching engine with buy/sell priority queues.</li>
-            <li>Supported full fills, partial fills, and order status transitions.</li>
-            <li>Added JUnit tests and GitHub Actions CI for regression detection.</li>
-          </ul>
         </article>
 
         <article class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
           <h3>Hosty</h3>
-          <p class="tech">C • Linux • Nginx • Systems Design</p>
+          <p class="tech">C · Linux · Nginx · Systems Design</p>
           <p>
-            Multi-tenant static hosting platform built in C with virtual hosting,
-            authenticated APIs, and tenant-isolated routing.
+            Multi-tenant static hosting platform with virtual hosting, authenticated APIs,
+            tenant-isolated routing, thread pools, rate limiting, and crash recovery.
           </p>
-          <ul>
-            <li>Implemented a custom HTTP server with thread pools and static file serving.</li>
-            <li>Added path validation, rate limiting, and quota enforcement.</li>
-            <li>Designed a persistent key-value store with append-only logging and crash recovery.</li>
-          </ul>
         </article>
       </div>
     </section>
 
     <section id="leadership" class="section">
-      <div class="section-heading">
-        <p>Leadership</p>
-        <h2>Community & Extracurriculars</h2>
+      <div class="section-title">
+        <h2>Leadership</h2>
+        <div class="underline"></div>
       </div>
 
       <div class="leadership-grid">
-        <div class="card">
+        <div class="leadership-card">
           <h3>Rise Tutor</h3>
           <p class="date">2025 – Present</p>
           <p>
@@ -243,7 +235,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="leadership-card">
           <h3>Caltech BSU, NSBE, and ColorStack</h3>
           <p class="date">2025 – Present</p>
           <p>
@@ -255,28 +247,63 @@
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-heading">
-        <p>Contact</p>
-        <h2>Let’s Connect</h2>
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
       </div>
 
-      <p>
-        I am open to software engineering internships, research opportunities,
-        and collaborative technical projects.
-      </p>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pasadena, CA</span>
+          </div>
 
-      <div class="contact-links">
-        <a href="mailto:iadam@caltech.edu">iadam@caltech.edu</a>
-        <a href="https://github.com/iadamib7" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank">LinkedIn</a>
+          <div class="contact-row">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:iadam@caltech.edu">iadam@caltech.edu</a>
+          </div>
+
+          <div class="contact-row">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:6263542395">(626) 354-2395</a>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer>
+    <p>iadamib7.github.io</p>
     <p>© 2026 Ibrahim Adam. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
