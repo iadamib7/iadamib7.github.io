@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Ibrahim Adam | Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -17,51 +14,68 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">IA</a>
+      <a href="#home" class="logo">Ibrahim A.</a>
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="menu-btn" id="menu-btn">
+      <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </nav>
   </header>
 
   <main>
+    <!-- HERO / ABOUT -->
     <section id="home" class="hero">
-      <div class="hero-text">
-        <p class="intro">Hello, I am</p>
+      <div class="hero-content">
+        <p class="eyebrow">CALTECH CS | FINTECH | APPLIED AI | DISTRIBUTED SYSTEMS</p>
+
         <h1>IBRAHIM ADAM</h1>
-        <h2>Computer Science Student at the California Institute of Technology</h2>
+
+        <h2>
+          Computer Science Student at the California Institute of Technology
+        </h2>
 
         <p class="hero-description">
-          I am passionate about financial technology and applied artificial intelligence,
+          I am passionate about financial technology (FinTech) and applied artificial intelligence,
           focusing on how intelligent systems can transform global banking and business ecosystems.
-          My interests center on building data-driven, scalable solutions that enhance financial
-          access and drive economic development.
+          My interests center on building data-driven, scalable solutions that enhance financial access
+          and drive economic development. I am particularly drawn to the intersection of machine learning,
+          distributed systems, and digital finance infrastructure.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn">View My Work</a>
-          <a href="assets/resume.pdf" target="_blank" class="btn secondary-btn">View Resume</a>
+          <a href="#projects" class="btn primary-btn">
+            <i class="fa-solid fa-code"></i>
+            View Projects
+          </a>
+
+          <a href="mailto:iadam@caltech.edu" class="btn secondary-btn">
+            <i class="fa-solid fa-envelope"></i>
+            Email Me
+          </a>
+
+          <a href="assets/resume.pdf" target="_blank" class="btn secondary-btn">
+            <i class="fa-solid fa-file-lines"></i>
+            Resume
+          </a>
         </div>
 
         <div class="social-icons">
-          <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub profile">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn">
+
+          <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn profile">
             <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="mailto:iadam@caltech.edu" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
       </div>
@@ -71,69 +85,90 @@
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- EDUCATION -->
+    <section id="education" class="section soft-section">
       <div class="section-title">
-        <h2>About Me</h2>
+        <h2>Education</h2>
         <div class="underline"></div>
       </div>
 
-      <div class="about-card">
-        <p>
-          I am a sophomore pursuing a B.S. in Computer Science at the California Institute of
-          Technology. I am particularly drawn to the intersection of machine learning,
-          distributed systems, and digital finance infrastructure. I aspire to design intelligent,
-          inclusive systems that empower sustainable growth on a global scale.
-        </p>
+      <div class="education-card">
+        <h3>California Institute of Technology</h3>
+        <h4>B.S. in Computer Science</h4>
+        <p class="muted">September 2025 – June 2029 | Pasadena, CA</p>
 
-        <div class="about-grid">
-          <div>
-            <h3>College</h3>
-            <p>California Institute of Technology</p>
-          </div>
-          <div>
-            <h3>Major</h3>
-            <p>B.S. Computer Science</p>
-          </div>
-          <div>
-            <h3>Focus Areas</h3>
-            <p>FinTech, AI, Distributed Systems</p>
-          </div>
-          <div>
-            <h3>GPA</h3>
-            <p>3.9/4.0</p>
+        <div class="coursework">
+          <h3>Relevant Coursework</h3>
+
+          <div class="course-grid">
+            <span>Introduction to Computer Programming</span>
+            <span>Data Structures and Algorithms</span>
+            <span>Calculus of One and Several Variables</span>
+            <span>Linear Algebra</span>
+            <span>Differential Equations</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section light-section">
+    <!-- TECHNICAL SKILLS -->
+    <section id="skills" class="section">
       <div class="section-title">
         <h2>Technical Skills</h2>
         <div class="underline"></div>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fa-solid fa-code"></i>
+      <div class="skills-block">
+        <div class="skill-group">
           <h3>Languages</h3>
-          <p>Java, C, Go, Python, TypeScript, JavaScript, SQL, HTML/CSS</p>
+
+          <div class="skill-tags">
+            <span>Java</span>
+            <span>C</span>
+            <span>Go</span>
+            <span>Python</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>HTML/CSS</span>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <i class="fa-solid fa-layer-group"></i>
+        <div class="skill-group">
           <h3>Tools & Frameworks</h3>
-          <p>Spring Boot, React, Gin, Vite, Git, GitHub Actions, Docker Compose, PostgreSQL, Linux, Nginx</p>
+
+          <div class="skill-tags">
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>Gin</span>
+            <span>Vite</span>
+            <span>Git</span>
+            <span>GitHub Actions</span>
+            <span>Docker Compose</span>
+            <span>PostgreSQL</span>
+            <span>Linux</span>
+            <span>Nginx</span>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <i class="fa-solid fa-network-wired"></i>
+        <div class="skill-group">
           <h3>Concepts</h3>
-          <p>REST APIs, Distributed Systems, Systems Programming, Concurrency, Authentication, Testing, CI/CD</p>
+
+          <div class="skill-tags">
+            <span>REST APIs</span>
+            <span>Distributed Systems</span>
+            <span>Systems Programming</span>
+            <span>Concurrency</span>
+            <span>Authentication</span>
+            <span>Testing</span>
+            <span>CI/CD</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section soft-section">
       <div class="section-title">
         <h2>Experience</h2>
         <div class="underline"></div>
@@ -146,11 +181,12 @@
               <h3>Software Engineer</h3>
               <p>TorMaMe · Remote</p>
             </div>
+
             <span>Jan. 2025 – Present</span>
           </div>
 
           <ul>
-            <li>Engineered Python backend services and React/TypeScript frontend components, improving feature delivery speed by 40%.</li>
+            <li>Engineered Python backend services and React/TypeScript frontend components for TorMaMe’s web platform, improving feature delivery speed by 40%.</li>
             <li>Built REST APIs, authentication flows, frontend interfaces, and backend integrations, reducing deployment failures and critical bugs by 30%.</li>
             <li>Automated deployment workflows using Docker Compose, PostgreSQL, and Nginx, cutting deployment time from 30 minutes to 10 minutes.</li>
           </ul>
@@ -160,8 +196,9 @@
           <div class="card-top">
             <div>
               <h3>Software Engineering Intern</h3>
-              <p>Veritas Foundation Inc. · Ghana / Remote</p>
+              <p>Veritas Foundation Inc. · Ashanti Region, Ghana / Remote</p>
             </div>
+
             <span>Apr. 2025 – Present</span>
           </div>
 
@@ -174,7 +211,8 @@
       </div>
     </section>
 
-    <section id="projects" class="section light-section">
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
       <div class="section-title">
         <h2>Projects</h2>
         <div class="underline"></div>
@@ -185,67 +223,92 @@
           <div class="project-icon">
             <i class="fa-solid fa-money-bill-transfer"></i>
           </div>
+
           <h3>Cross-Border Payments Simulator</h3>
           <p class="tech">Go · Gin · React · TypeScript · PostgreSQL · Docker Compose</p>
+
           <p>
-            Distributed payments simulator modeling transfer initiation, FX quoting,
-            route selection, ledger updates, and settlement tracking.
+            Architected a distributed payments simulator modeling transfer initiation,
+            FX quoting, route selection, ledger updates, and settlement tracking.
           </p>
+
+          <ul>
+            <li>Developed backend REST APIs in Go/Gin to simulate financial messaging and transaction state transitions.</li>
+            <li>Built React dashboards to visualize transaction states and reduce payment-flow debugging time by 50%.</li>
+          </ul>
         </article>
 
         <article class="project-card">
           <div class="project-icon">
             <i class="fa-solid fa-chart-line"></i>
           </div>
+
           <h3>OrderFlow</h3>
           <p class="tech">Java · Spring Boot · PostgreSQL · JUnit · GitHub Actions</p>
+
           <p>
-            Trading engine supporting limit order submission, price-time-priority matching,
-            trade execution, cancellation, REST APIs, testing, and CI workflows.
+            Engineered a Java/Spring Boot trading engine supporting limit order submission,
+            price-time-priority matching, trade execution, cancellation, and REST APIs.
           </p>
+
+          <ul>
+            <li>Implemented buy/sell priority queues with full and partial fills.</li>
+            <li>Added JUnit tests and GitHub Actions CI to improve regression detection.</li>
+          </ul>
         </article>
 
         <article class="project-card">
           <div class="project-icon">
             <i class="fa-solid fa-server"></i>
           </div>
+
           <h3>Hosty</h3>
           <p class="tech">C · Linux · Nginx · Systems Design</p>
+
           <p>
-            Multi-tenant static hosting platform with virtual hosting, authenticated APIs,
-            tenant-isolated routing, thread pools, rate limiting, and crash recovery.
+            Built a multi-tenant static hosting platform in C with virtual hosting,
+            authenticated APIs, tenant-isolated routing, and systems-level reliability features.
           </p>
+
+          <ul>
+            <li>Implemented thread pools, static file serving, path validation, rate limiting, and quota enforcement.</li>
+            <li>Designed a persistent key-value store with append-only logging and crash recovery.</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section id="leadership" class="section">
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section soft-section">
       <div class="section-title">
         <h2>Leadership</h2>
         <div class="underline"></div>
       </div>
 
       <div class="leadership-grid">
-        <div class="leadership-card">
+        <article class="leadership-card">
           <h3>Rise Tutor</h3>
           <p class="date">2025 – Present</p>
+
           <p>
             Tutored middle and high school students in math and science, improving average
             student performance from 45% to 78%.
           </p>
-        </div>
+        </article>
 
-        <div class="leadership-card">
-          <h3>Caltech BSU, NSBE, and ColorStack</h3>
+        <article class="leadership-card">
+          <h3>Caltech Black Students Union, NSBE, and ColorStack</h3>
           <p class="date">2025 – Present</p>
+
           <p>
             Active member of technical and identity-based communities focused on peer mentorship,
             professional development, and software engineering growth.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section contact-section">
       <div class="section-title">
         <h2>Get In Touch</h2>
@@ -270,10 +333,11 @@
           </div>
 
           <div class="contact-socials">
-            <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/iadamib7" target="_blank" aria-label="GitHub profile">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn">
+
+            <a href="https://www.linkedin.com/in/ibrahim-adam-9664a4214/" target="_blank" aria-label="LinkedIn profile">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
